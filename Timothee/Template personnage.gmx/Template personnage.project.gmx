@@ -12,11 +12,21 @@
       </sprites>
       <sprites name="torso">
         <sprite>sprites\spr_player_empty</sprite>
-        <sprite>sprites\spr_knif</sprite>
+        <sprites name="knif">
+          <sprite>sprites\spr_knif_idle</sprite>
+          <sprite>sprites\spr_knif_atk</sprite>
+        </sprites>
       </sprites>
-      <sprite>sprites\atk</sprite>
+      <sprite>sprites\atk_player_melee</sprite>
     </sprites>
-    <sprite>sprites\sprite69</sprite>
+    <sprites name="enemy">
+      <sprites name="chinois">
+        <sprite>sprites\spr_chinois_idle</sprite>
+        <sprite>sprites\spr_chinois_atk</sprite>
+      </sprites>
+      <sprite>sprites\atk_melee_enemy_h</sprite>
+      <sprite>sprites\atk_melee_enemy_v</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -32,8 +42,10 @@
     <objects name="Enemy">
       <objects name="Attack">
         <object>objects\IAttack_enemy</object>
+        <object>objects\attack_enemy_melee</object>
       </objects>
       <object>objects\Ienemy</object>
+      <object>objects\obj_chinois</object>
     </objects>
   </objects>
   <rooms name="rooms">
