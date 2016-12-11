@@ -37,13 +37,21 @@
       </sprites>
       <sprite>sprites\atk_melee_enemy_h</sprite>
       <sprite>sprites\atk_melee_enemy_v</sprite>
+      <sprite>sprites\sprite17</sprite>
+      <sprites name="mexicain">
+        <sprite>sprites\spr_mexicain_idle</sprite>
+        <sprite>sprites\spr_mexicain_atk</sprite>
+      </sprites>
     </sprites>
     <sprites name="attack">
       <sprite>sprites\atk_player_melee</sprite>
       <sprite>sprites\explosion</sprite>
     </sprites>
+    <sprite>sprites\spr_spawner</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <objects name="projectil">
@@ -72,6 +80,8 @@
       <object>objects\obj_doritos</object>
       <object>objects\obj_mustard</object>
     </objects>
+    <object>objects\obj_spawner_code</object>
+    <object>objects\obj_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
