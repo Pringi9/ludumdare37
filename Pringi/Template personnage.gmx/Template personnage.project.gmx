@@ -77,6 +77,7 @@
       </objects>
       <object>objects\Ienemy</object>
       <object>objects\obj_chinois</object>
+      <object>objects\obj_mexicain</object>
     </objects>
     <objects name="weapon">
       <object>objects\Iweapon</object>
