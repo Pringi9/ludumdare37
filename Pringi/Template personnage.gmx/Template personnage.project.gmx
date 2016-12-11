@@ -48,9 +48,12 @@
       <sprite>sprites\explosion</sprite>
     </sprites>
     <sprite>sprites\spr_spawner</sprite>
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_left_band</sprite>
+    <sprite>sprites\spr_right_band</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
+    <background>background\bck_room</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -82,6 +85,9 @@
     </objects>
     <object>objects\obj_spawner_code</object>
     <object>objects\obj_spawner</object>
+    <object>objects\obj_wall</object>
+    <object>objects\obj_left_band</object>
+    <object>objects\obj_right_band</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
