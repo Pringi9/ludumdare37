@@ -42,6 +42,14 @@
         <sprite>sprites\spr_mexicain_idle</sprite>
         <sprite>sprites\spr_mexicain_atk</sprite>
       </sprites>
+      <sprites name="texan">
+        <sprite>sprites\spr_texan_idle</sprite>
+        <sprite>sprites\spr_texan_atk</sprite>
+      </sprites>
+      <sprites name="francais">
+        <sprite>sprites\spr_francais_idle</sprite>
+        <sprite>sprites\spr_francais_atk</sprite>
+      </sprites>
     </sprites>
     <sprites name="attack">
       <sprite>sprites\atk_player_melee</sprite>
@@ -78,6 +86,8 @@
       <object>objects\Ienemy</object>
       <object>objects\obj_chinois</object>
       <object>objects\obj_mexicain</object>
+      <object>objects\obj_texan</object>
+      <object>objects\obj_francais</object>
     </objects>
     <objects name="weapon">
       <object>objects\Iweapon</object>
