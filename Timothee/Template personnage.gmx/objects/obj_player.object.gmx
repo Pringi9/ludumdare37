@@ -199,6 +199,7 @@ if (weapon == 1)
         i = instance_create(_x, _y, obj_proj_doritos);
         i.d -= 45;
         i.p = 0;
+        audio_play_sound(snd_doritos, 10, false);
     }
 }
 </string>
@@ -226,6 +227,7 @@ if (weapon == 2)
 {
     if (mouse_check_button(mb_left))
     {
+        audio_stop_sound(snd_sauce);
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
         {
@@ -245,6 +247,7 @@ if (weapon == 2)
         }
         attacking = 1;
         sprite_index = spr_mustard_atk;
+        audio_play_sound(snd_sauce, 10, false);
     }
 }
 </string>
@@ -291,6 +294,7 @@ if (weapon == 3)
         }
         attacking = 1;
         sprite_index = spr_patate_atk;
+        audio_play_sound(snd_patate, 10, false);
     }
 }
 </string>
@@ -364,6 +368,7 @@ if (weapon == 5)
 {
     if (mouse_check_button(mb_left))
     {
+        audio_stop_sound(snd_fromage);
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
         {
@@ -383,6 +388,7 @@ if (weapon == 5)
         }
         attacking = 1;
         sprite_index = spr_fromage_atk;
+        audio_play_sound(snd_fromage, 10, false);
     }
 }
 </string>
@@ -509,6 +515,7 @@ if (mouse_check_button(mb_right))
         with(_id)
         {
             instance_destroy();
+            audio_play_sound(snd_weapon_trhow, 5, false);
         }
     }
 }
@@ -541,6 +548,30 @@ with (Ienemy)
 }
 
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_player_death</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

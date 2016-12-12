@@ -4,7 +4,19 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_chinois_spawn</sound>
+    <sound>sound\snd_spawn_open</sound>
+    <sound>sound\snd_mexicain_spawn</sound>
+    <sound>sound\snd_player_death</sound>
+    <sound>sound\snd_weapon_trhow</sound>
+    <sound>sound\snd_patate</sound>
+    <sound>sound\snd_sauce</sound>
+    <sound>sound\snd_fromage</sound>
+    <sound>sound\snd_doritos</sound>
+    <sound>sound\snd_weapon_boom</sound>
+    <sound>sound\music_badass_wolf_shirt</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="weapon">
       <sprite>sprites\mustard</sprite>
@@ -164,6 +176,7 @@
     <objects name="doodad">
       <object>objects\obj_sang</object>
     </objects>
+    <object>objects\obj_score</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

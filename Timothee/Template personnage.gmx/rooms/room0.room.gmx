@@ -63,6 +63,7 @@
     <instance objName="obj_wall" x="448" y="1056" name="inst_FE67E896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_left_band" x="0" y="0" name="inst_6517911F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_right_band" x="1530" y="0" name="inst_5F5FDC08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_score" x="1024" y="32" name="inst_B7762B9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
