@@ -122,6 +122,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bck_room</background>
+    <background>background\splashscreen</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -177,8 +178,10 @@
       <object>objects\obj_sang</object>
     </objects>
     <object>objects\obj_score</object>
+    <object>objects\obj_timer</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\spashscreen</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
