@@ -9,6 +9,11 @@
     <sprites name="weapon">
       <sprite>sprites\mustard</sprite>
       <sprite>sprites\doritos</sprite>
+      <sprite>sprites\pizza</sprite>
+      <sprite>sprites\fromage</sprite>
+      <sprite>sprites\patate</sprite>
+      <sprite>sprites\pain</sprite>
+      <sprite>sprites\biere</sprite>
     </sprites>
     <sprites name="player">
       <sprites name="leg">
@@ -28,6 +33,26 @@
           <sprite>sprites\spr_doritos_idle</sprite>
           <sprite>sprites\spr_doritos_atk</sprite>
         </sprites>
+        <sprites name="fromage">
+          <sprite>sprites\spr_fromage_idle</sprite>
+          <sprite>sprites\spr_fromage_atk</sprite>
+        </sprites>
+        <sprites name="patate">
+          <sprite>sprites\spr_patate_idle</sprite>
+          <sprite>sprites\spr_patate_atk</sprite>
+        </sprites>
+        <sprites name="pizza">
+          <sprite>sprites\spr_pizza_idle</sprite>
+          <sprite>sprites\spr_pizza_atk</sprite>
+        </sprites>
+        <sprites name="biere">
+          <sprite>sprites\spr_biere_idle</sprite>
+          <sprite>sprites\spr_biere_atk</sprite>
+        </sprites>
+        <sprites name="pain">
+          <sprite>sprites\spr_pain_idle</sprite>
+          <sprite>sprites\sprite41</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="enemy">
@@ -37,18 +62,66 @@
       </sprites>
       <sprite>sprites\atk_melee_enemy_h</sprite>
       <sprite>sprites\atk_melee_enemy_v</sprite>
+      <sprites name="français">
+        <sprite>sprites\spr_francais_idle</sprite>
+        <sprite>sprites\spr_francais_atk</sprite>
+      </sprites>
+      <sprites name="mexicain">
+        <sprite>sprites\spr_mexicain_idle</sprite>
+        <sprite>sprites\spr_mexicain_atk</sprite>
+      </sprites>
+      <sprites name="tirolien">
+        <sprite>sprites\spr_tirolien_idle</sprite>
+        <sprite>sprites\spr_tirolien_atk</sprite>
+      </sprites>
+      <sprites name="anglais">
+        <sprite>sprites\spr_anglais_idle</sprite>
+        <sprite>sprites\spr_anglais_atk</sprite>
+      </sprites>
+      <sprites name="texan">
+        <sprite>sprites\spr_texan_idle</sprite>
+        <sprite>sprites\spr_texan_atk</sprite>
+      </sprites>
     </sprites>
     <sprites name="attack">
       <sprite>sprites\atk_player_melee</sprite>
       <sprite>sprites\explosion</sprite>
     </sprites>
+    <sprites name="projectile">
+      <sprite>sprites\spr_proj_doritos</sprite>
+      <sprite>sprites\spr_proj_mustard</sprite>
+      <sprite>sprites\spr_proj_patate</sprite>
+      <sprite>sprites\spr_proj_fromage</sprite>
+      <sprite>sprites\spr_proj_fromage_s</sprite>
+      <sprite>sprites\spr_proj_pizza</sprite>
+      <sprite>sprites\spr_proj_pain</sprite>
+      <sprite>sprites\spr_proj_biere</sprite>
+    </sprites>
+    <sprites name="room">
+      <sprite>sprites\spr_spawner</sprite>
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_right_band</sprite>
+      <sprite>sprites\spr_left_band</sprite>
+    </sprites>
+    <sprites name="doodad">
+      <sprite>sprites\spr_sang</sprite>
+      <sprite>sprites\spr_flaque</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_room</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <objects name="projectil">
       <object>objects\iprojectile</object>
       <object>objects\weapon_proj</object>
+      <object>objects\obj_proj_mustard</object>
+      <object>objects\obj_proj_fromage</object>
+      <object>objects\obj_proj_patate</object>
+      <object>objects\obj_proj_doritos</object>
+      <object>objects\obj_proj_pizza</object>
+      <object>objects\obj_proj_biere</object>
     </objects>
     <objects name="Player">
       <objects name="Attack">
@@ -66,11 +139,30 @@
       </objects>
       <object>objects\Ienemy</object>
       <object>objects\obj_chinois</object>
+      <object>objects\obj_francais</object>
+      <object>objects\obj_tirolien</object>
+      <object>objects\obj_mexicain</object>
+      <object>objects\obj_texan</object>
     </objects>
     <objects name="weapon">
       <object>objects\Iweapon</object>
       <object>objects\obj_doritos</object>
+      <object>objects\obj_patate</object>
+      <object>objects\obj_fromage</object>
+      <object>objects\obj_pizza</object>
       <object>objects\obj_mustard</object>
+      <object>objects\obj_pain</object>
+      <object>objects\obj_biere</object>
+    </objects>
+    <objects name="room">
+      <object>objects\obj_left_band</object>
+      <object>objects\obj_right_band</object>
+      <object>objects\obj_spawner_code</object>
+      <object>objects\obj_spawner</object>
+      <object>objects\obj_wall</object>
+    </objects>
+    <objects name="doodad">
+      <object>objects\obj_sang</object>
     </objects>
   </objects>
   <rooms name="rooms">

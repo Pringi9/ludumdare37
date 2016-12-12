@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>mvt_speed = 40;
-_x = mouse_x;
-_y = mouse_y;
-range = 10;
+d = point_direction(x, y, mouse_x, mouse_y);
+range = 5;
+p = 0;
+
 </string>
           </argument>
         </arguments>

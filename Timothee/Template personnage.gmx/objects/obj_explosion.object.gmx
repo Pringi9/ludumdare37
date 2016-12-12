@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index == 6)
+            <string>if (image_index == 5)
 {
     instance_destroy();
 }

@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>mvt_speed = 40;
-_x = mouse_x + (mouse_x - x);
-_y = mouse_y + (mouse_y - y);
+d = point_direction(x, y, mouse_x, mouse_y);
 range = 1;
+p = 0;
 </string>
           </argument>
         </arguments>
@@ -51,12 +51,13 @@ range = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_towards_point(_x, _y, mvt_speed);
+            <string>motion_add(d, mvt_speed);
 range -= 1;
 if (range == 0)
 {
     instance_destroy();
 }
+
 </string>
           </argument>
         </arguments>
