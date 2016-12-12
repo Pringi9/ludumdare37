@@ -94,6 +94,9 @@
         <sprite>sprites\spr_texan_idle</sprite>
         <sprite>sprites\spr_texan_atk</sprite>
       </sprites>
+      <sprites name="rital">
+        <sprite>sprites\spr_rital_iatk</sprite>
+      </sprites>
     </sprites>
     <sprites name="attack">
       <sprite>sprites\atk_player_melee</sprite>
@@ -119,6 +122,7 @@
       <sprite>sprites\spr_sang</sprite>
       <sprite>sprites\spr_flaque</sprite>
     </sprites>
+    <sprite>sprites\spr_exp_player</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_room</background>
@@ -156,6 +160,7 @@
       <object>objects\obj_tirolien</object>
       <object>objects\obj_mexicain</object>
       <object>objects\obj_texan</object>
+      <object>objects\obj_rital</object>
     </objects>
     <objects name="weapon">
       <object>objects\Iweapon</object>
@@ -179,6 +184,7 @@
     </objects>
     <object>objects\obj_score</object>
     <object>objects\obj_timer</object>
+    <object>objects\obj_exp_player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\spashscreen</room>

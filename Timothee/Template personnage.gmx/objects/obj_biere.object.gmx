@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>weapon = 7;
 appearance = spr_biere_idle;
+mun = 50;
 alarm[0] = room_speed * 60
 </string>
           </argument>

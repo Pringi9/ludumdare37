@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>weapon = 4;
 appearance = spr_pizza_idle;
+mun = 5;
 </string>
           </argument>
         </arguments>

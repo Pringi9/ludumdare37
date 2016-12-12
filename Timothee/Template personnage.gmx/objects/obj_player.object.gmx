@@ -33,6 +33,7 @@ respawn = 3;
 dir = 90;
 leg = instance_create(x, y, obj_leg);
 image_speed = 1
+mun = 0;
 </string>
           </argument>
         </arguments>
@@ -166,6 +167,7 @@ if (weapon == 1)
 {
     if (mouse_check_button_pressed(mb_left))
     {
+        mun -= 1;
         a = 0;
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
@@ -231,6 +233,7 @@ if (weapon == 2)
 {
     if (mouse_check_button(mb_left))
     {
+        mun -= 1;
         audio_stop_sound(snd_sauce);
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
@@ -279,6 +282,7 @@ if (weapon == 3)
 {
     if (mouse_check_button_pressed(mb_left))
     {
+        mun -= 1;
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
         {
@@ -326,6 +330,7 @@ if (weapon == 4)
 {
     if (mouse_check_button_pressed(mb_left))
     {
+        mun -= 1;
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
         {
@@ -372,6 +377,7 @@ if (weapon == 5)
 {
     if (mouse_check_button(mb_left))
     {
+        mun -= 1;
         audio_stop_sound(snd_fromage);
         d = point_direction(x, y, mouse_x, mouse_y);
         if (d &gt; 45 &amp;&amp; d &lt;= 135)
@@ -482,6 +488,11 @@ if (weapon == 5)
         }
     }
 }
+
+if (sprite_index == spr_exp_player &amp;&amp; image_index == 6)
+{
+    sprite_index = spr_knif_idle;
+}
 </string>
           </argument>
         </arguments>
@@ -516,12 +527,20 @@ if (mouse_check_button(mb_right))
         }
         weapon = _id.weapon;
         weapon_app = _id.sprite_index;
+        mun = _id.mun;
         with(_id)
         {
             instance_destroy();
             audio_play_sound(snd_weapon_trhow, 5, false);
         }
     }
+}
+if (mun == 0 &amp;&amp; weapon != 0)
+{
+    proj = instance_create(x, y, weapon_proj);
+    proj.sprite_index = weapon_app;
+    weapon = 0;  
+    sprite_index = spr_knif_idle;
 }
 </string>
           </argument>
@@ -550,7 +569,10 @@ with (Ienemy)
 {
     instance_destroy();
 }
-
+x = 960;
+y = 540;
+weapon = 0;
+sprite_index = spr_exp_player;
 </string>
           </argument>
         </arguments>

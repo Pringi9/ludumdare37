@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>weapon = 2;
 appearance = spr_mustard_idle;
+mun = 90;
 </string>
           </argument>
         </arguments>
