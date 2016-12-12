@@ -56,6 +56,10 @@ image_speed = 1
           <argument>
             <kind>1</kind>
             <string>///move
+if (keyboard_check(vk_escape))
+{
+    game_end();
+}
 //mort
 if(respawn == 0)
 {
